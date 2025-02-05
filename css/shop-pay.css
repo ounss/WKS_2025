@@ -1,0 +1,101 @@
+.container-title {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.payment-container {
+  display: flex;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.payment-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.connect,
+.invit {
+  text-align: center;
+  width: 20rem;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.connect h4,
+.invit h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #173636;
+  font-weight: normal;
+}
+.line {
+  border-bottom: none;
+  border-right: 1px solid #ccc;
+  justify-self: center;
+  height: 15rem;
+}
+
+.connect button,
+.btn-guest {
+  font-family: "montserrat";
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 3rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+.connect button a {
+  color: inherit; /* Hérite de la couleur du bouton */
+  text-decoration: none; /* Supprime la décoration de texte par défaut du lien */
+}
+.btn-connect {
+  background-color: rgb(187, 3, 3);
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+}
+
+.btn-signup {
+  background-color: rgb(187, 3, 3);
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+}
+
+.btn-guest {
+  margin-top: 4rem;
+  background-color: rgb(187, 3, 3);
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+}
+.btn-guest a {
+  color: inherit; /* Hérite de la couleur du bouton */
+  text-decoration: none; /* Supprime la décoration de texte par défaut du lien */
+}
+.btn-signup:hover {
+  background-color: rgb(187, 3, 3);
+}
+.btn-connect:hover {
+  background-color: rgb(187, 3, 3);
+}
+.btn-guest:hover {
+  background-color: rgb(187, 3, 3);
+}
+@media (max-width: 390px) {
+  .line {
+    border-bottom: none;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    justify-self: center;
+    width: 15rem;
+    height: 1rem;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique Du Bien-Être</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/compte.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="asset/logo5.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="asset/logos/favicon.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Librfe+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="w-full fixed top-0 bg-[#739e3c] text-white z-50 py-2 shadow-md">
+            <div class="container mx-auto flex justify-between items-center px-6 h-20">
+                <div class="img-header flex items-center">
+                    <a href="index.html">
+                        <img class="h-12" src="asset/logos/Transparent (blanc).png" alt="Logo">
+                    </a>
+                </div>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white"></div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="index.html" class="hover:text-orange-700">Home</a></li>
+                        <li><a href="propos.html" class="hover:text-orange-700">À propos</a></li>
+                        <li><a href="items.html" class="hover:text-orange-700">Boutique</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-700">Contact</a></li>
+                    </ul>
+                    <div class="flex items-center space-x-4">
+                        <a href="shop.html">
+                            <img src="asset/cart-shopping.svg" alt="Panier" class="h-8 w-8">
+                        </a>
+                        <a href="connexion.html">
+                            <img src="asset/user.svg" alt="Connexion" class="h-8 w-8">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="compte">
+        <div class="profil">
+            <h2>Bienvenue,</h2>
+            <h2>*Prénom* *Nom*</h2>
+            <img src="asset/exemple.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="info">
+            <div class="options">
+                <div class="option">
+                    <button class="expand-button">Mes Informations</button>
+                    <div class="details">
+                        <h3>Nom :</h3>
+                        <div class="details-change">
+                            <p>Nom ***</p> <img src="asset/pen.svg">
+                        </div>
+                        <h3>Prénom :</h3>
+                        <div class="details-change">
+                            <p>Prénom ***</p><img src="asset/pen.svg">
+                        </div>
+                        <h3>Mail :</h3>
+                        <div class="details-change">
+                            <p>*****@gmail.com</p><img src="asset/pen.svg">
+                        </div>
+                        <h3>Mot de passe :</h3>
+                        <div class="details-change">
+                            <p>**********</p><img src="asset/pen.svg">
+                        </div>
+                        <h3>Adresse :</h3>
+                        <div class="details-change">
+                            <p>Rue de Stalle 292B, 1180 Uccle</p><img src="asset/pen.svg">
+                        </div>
+                        <h3>Moyen de paiement :</h3>
+                        <div class="details-change">
+                            <p>Bancontact</p><img src="asset/pen.svg">
+                        </div>
+                        <!-- Contenu de "Mes Informations" -->
+                    </div>
+                </div>
+                <div class="option">
+                    <button class="expand-button">Mes Prestations</button>
+                    <div class="details">
+                        <h3>Prestation n°1 : Massage </h3>
+                        <h4>22/05/2023</h4>
+                        <div class="commande">
+                            <img src="asset/exemple.jpg">
+                            <p>Par: Mehauden Claudine</p>
+                            <p>50€</p>
+                        </div>
+                        <a href="rdv.html">
+                            <div class="statut">
+                                <p>Nouvelle réservation</p>
+                                <img src="asset/commande/livrée.svg">
+                            </div>
+                        </a>
+                        <h3>Commande n°2 : 00113242 </h3>
+                        <p>05/05/2024</p>
+                        <div class="commande">
+                            <img src="asset/exemple.jpg">
+                            <p>Pièce 1</p>
+                            <p>50€</p>
+                        </div>
+                        <a href="detail-commande.html">
+                            <div class="statut">
+                                <p>Expédiée</p>
+                                <img src="asset/commande/in-transit.svg">
+                            </div>
+                        </a>
+                        <h3>Commande n°3 : 00125824</h3>
+                        <p>31/05/2024</p>
+                        <div class="commande">
+                            <img src="asset/exemple.jpg">
+                            <p>Pièce 1</p>
+                            <p>50€</p>
+                        </div>
+                        <a href="detail-commande.html">
+                            <div class="statut">
+                                <p>En préparation</p>
+                                <img src="asset/commande/en préparation.svg">
+                            </div>
+                        </a>
+                        <!-- Contenu de "Mes Commandes" -->
+                    </div>
+                    <div class="option">
+                        <button class="expand-button">Mes Commandes</button>
+                        <div class="details">
+                            <h3>Commande n°1 : 00911823 </h3>
+                            <h4>22/05/2023</h4>
+                            <div class="commande">
+                                <img src="asset/exemple.jpg">
+                                <p>Pièce 1</p>
+                                <p>50€</p>
+                            </div>
+                            <a href="detail-commande.html">
+                                <div class="statut">
+                                    <p>Livrée</p>
+                                    <img src="asset/commande/livrée.svg">
+                                </div>
+                            </a>
+                            <h3>Commande n°2 : 00113242 </h3>
+                            <p>05/05/2024</p>
+                            <div class="commande">
+                                <img src="asset/exemple.jpg">
+                                <p>Pièce 1</p>
+                                <p>50€</p>
+                            </div>
+                            <a href="detail-commande.html">
+                                <div class="statut">
+                                    <p>Expédiée</p>
+                                    <img src="asset/commande/in-transit.svg">
+                                </div>
+                            </a>
+                            <h3>Commande n°3 : 00125824</h3>
+                            <p>31/05/2024</p>
+                            <div class="commande">
+                                <img src="asset/exemple.jpg">
+                                <p>Pièce 1</p>
+                                <p>50€</p>
+                            </div>
+                            <a href="detail-commande.html">
+                                <div class="statut">
+                                    <p>En préparation</p>
+                                    <img src="asset/commande/en préparation.svg">
+                                </div>
+                            </a>
+                            <!-- Contenu de "Mes Commandes" -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" defer></script>

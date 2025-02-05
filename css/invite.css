@@ -1,0 +1,101 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.guest-order-container {
+  margin: 15rem auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.guest-order-form h2 {
+  color: rgb(187, 3, 3);
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(187, 3, 3);
+  font-weight: bold;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+select:focus {
+  border-color: rgb(187, 3, 3);
+  outline: none;
+}
+
+.guest-order-container input[type="text"],
+.guest-order-container input[type="email"],
+.guest-order-container input[type="tel"],
+.guest-order-container input[type="month"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.guest-order-container button.btn-commander {
+  font-family: "montserrat", sans-serif;
+  background-color: rgb(187, 3, 3);
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.guest-order-container button.btn-commander:hover {
+  background-color: rgb(187, 3, 3);
+}
+
+/* Autres styles spécifiques encapsulés */
+
+@media (max-width: 768px) {
+  .guest-order-container {
+    margin: 10rem auto;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .guest-order-container input[type="text"],
+  .guest-order-container input[type="email"],
+  .guest-order-container input[type="tel"],
+  .guest-order-container input[type="month"] {
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+
+  .guest-order-container button.btn-commander {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 390px) {
+  .guest-order-container {
+    margin: 10rem auto;
+  }
+}

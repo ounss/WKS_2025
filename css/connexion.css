@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+}
+.connexion {
+  border-radius: 0 1rem 1rem 0;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  margin: 7rem auto;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styles pour le switch */
+.switch {
+  width: 50%;
+  padding: 10rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #0a125e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.switch.active {
+  background-color: rgb(187, 3, 3);
+}
+
+.switch h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#switch-button {
+  font-family: "Red Hat Display", serif;
+  cursor: pointer;
+  border-radius: 5px; 
+  border: none;
+  padding: 10px 20px;
+  color: rgb(187, 3, 3);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+}
+
+.inscription-form,
+.already-registered {
+  height: 800px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgb(187, 3, 3);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.already-registered {
+  background-color: #0a125e;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-group input {
+ font-family: "Red Hat Display", serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group-adress {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group-adress {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-group-adress input {
+  font-family: "red hat display", sans-serif;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+.form-group-adress input#commune {
+  font-family: "red hat display", sans-serif;
+  width: 49%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group-adress input#cp {
+  font-family: "red hat display", sans-serif;
+  width: 49%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+::placeholder {
+  font-size: 1rem;
+}
+
+.cp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cp input {
+  width: 49%;
+}
+
+.inscription-form a,
+.already-registered a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(187, 3, 3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inscription-form a:hover,
+.already-registered a:hover {
+  background-color: rgb(187, 3, 3);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .switch,
+  .switch.active {
+    width: 100%;
+    padding: 10rem 0 0 0;
+  }
+
+  .inscription-form,
+  .already-registered {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .connexion {
+    flex-direction: column;
+  }
+  .switch,
+  .switch.active {
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem 1rem 0 0;
+    font-size: small;
+    padding: 1rem;
+    width: 100%;
+    height: 1%;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .inscription-form,
+  .already-registered {
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+  }
+}
