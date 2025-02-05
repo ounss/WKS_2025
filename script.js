@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function startAutoSlide() {
     interval = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 5000);
   }
 
   carousel.addEventListener("transitionend", resetPosition);
