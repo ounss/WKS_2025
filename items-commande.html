@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique Du Bien-Être</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/items-commande.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="asset/logo5.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="container">
+
+                <div class="img-header">
+
+                    <a href="index.html"> <img style="width: 50%;" src="log" alt="Logo"> </a>
+                </div>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="responsive">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="propos.html"> À propos</a></li>
+                        <li><a href="item.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button><a href="rdv.html">RENDEZ-VOUS</a>
+                            </button></li>
+                    </ul>
+                    <div class="icon">
+                        <a href="shop.html"><img src="asset/cart-shopping.svg" alt="Panier"></a>
+                        <a href="connexion.html"><img src="asset/user.svg" style="
+    width: 1.8rem" alt="Connexion"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="items-command">
+            <section class="ordered-items">
+                <h2>Article(s) commandé(s)</h2>
+                <div class="category">
+                    <h3> Produit</h3>
+                    <div class="line"></div>
+                    <h3> Référence</h3>
+                    <div class="line"></div>
+                    <h3> Quantité</h3>
+                    <div class="line"></div>
+                    <h3> Prix</h3>
+                </div>
+                <div class="item">
+                    <div class="pictures">
+                        <img src="asset/exemple.jpg">
+                    </div>
+                    <div class="line"></div>
+                    <div class="taille">
+                        <p>#3409488921</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="quantité">
+                        <p>1</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="prix">
+                        <p>50,00 €</p>
+                    </div>
+
+                </div>
+
+                <!-- Add more items as needed -->
+            </section>
+
+            <section class="order-summary">
+                <h2>Résumé de la commande</h2>
+                <div class="summary-item">
+                    <p>Sous-total : 50,00 €</p>
+                </div>
+                <div class="summary-item">
+                    <p>Frais de transport : 5,00 €</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Total : 55,00 €</h3>
+                </div>
+
+                <a href="shop-pay.html" button="pay">Aller vers le paiement</a>
+            </section>
+
+        </div>

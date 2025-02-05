@@ -1,7 +1,7 @@
 // FONCTION POUR LE BURGER
 function toggleMenu() {
   const responsive = document.querySelector(".responsive");
-  const burgerMenu = document.querySelector(".burger-menu");
+  const burgerMenu = document.querySelector(".md:hidden");
   burgerMenu.classList.toggle("active");
   responsive.classList.toggle("active");
 }
