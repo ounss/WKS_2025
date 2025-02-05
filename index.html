@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique Du Bien-Être</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="asset/logo5.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="container">
+
+                <div class="img-header">
+
+                    <a href="index.html"> <img src="asset/logo8.png" alt="Logo"> </a>
+                </div>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="responsive">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="propos.html"> À propos</a></li>
+                        <li><a href="items.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><button><a href="rdv.html">RENDEZ-VOUS</a>
+                            </button></li>
+                    </ul>
+                    <div class="icon">
+                        <a href="shop.html"><img src="asset/cart-shopping.svg" alt="Panier"></a>
+                        <a href="connexion.html"><img src="asset/user.svg" style="
+    width: 1.8rem" alt="Connexion"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!--  <span class="text"> LOREM IPSUM</span>-->
+                <div class="slide"><img src="asset/hero/lake-mountains.jpg" alt="Nature"></div>
+                <div class="slide"><img src="asset/hero/morskie-oko-tatry.jpg" alt="City"></div>
+                <div class="slide"><img src="asset/hero/couple-propagating-their-houseplants-as-hobby-together.jpg"
+                        alt="Ocean"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <h1>NOS PRACTICIENS</h1>
+        <div class="practicien">
+            <div class="card">
+                <img src="asset/hero/lake-mountains.jpg">
+                <div class="info_praticien">
+                    <h4>Mehauden Claudine</h4>
+                    <p>Consectetur adipiscing</p>
+                </div>
+                <button><a href="rdv.html">RENDEZ-VOUS</a>
+                </button>
+            </div>
+            <div class="card">
+                <img src="asset/hero/lake-mountains.jpg">
+                <div class="info_praticien">
+                    <h4>Praticien 1</h4>
+                    <p>fonction</p>
+                </div>
+                <button><a href="rdv.html">RENDEZ-VOUS</a>
+                </button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="first-party">
+                <div class="links">
+                    <p>Liens :</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="propos.html"> À propos</a></li>
+                        <li><a href="items.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="shop.html">Panier</a></li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <p>Autres :</p>
+                    <ul>
+                        <li><a href="#contact">CVG</a></li>
+                        <li><a href="#contact">Politique de retour</a></li>
+                        <li><a href="#contact">Avis</a></li>
+                    </ul>
+                    <div class="réseaux">
+                        <p>Suiviez-nous :</p>
+                        <ul>
+                            <li><img src="asset/logo_réseaux_sociaux/facebook.svg" alt="Logo"></li>
+                            <li><img src="asset/logo_réseaux_sociaux/insta.svg" alt="Logo"></li>
+                            <li><img src="asset/logo_réseaux_sociaux/x.svg" alt="Logo"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="logo-divers">
+                    <div class="paiement">
+                        <p>Moyen de paiement :</p>
+                        <ul>
+                            <li><img src="asset/amex.svg" alt="Logo"></li>
+                            <li><img src="asset/bancontact.svg" alt="Logo"></li>
+                            <li><img src="asset/mastercard.svg" alt="Logo"></li>
+                            <li><img src="asset/maestro.svg" alt="Logo"></li>
+                            <li><img src="asset/visa.svg" alt="Logo"></li>
+                            <li><img src="asset/paypal.svg" alt="Logo"></li>
+                        </ul>
+                    </div>
+                    <div class="livraison">
+                        <p>Livraison :</p>
+                        <ul>
+                            <li><img src="asset/bpost.svg" alt="Logo"></li>
+                            <li><img src="asset/mondialrelay.svg" alt="Logo"></li>
+                            <li><img src="asset/postnl.svg" alt="Logo"></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="img-footer">
+                    <img src="asset/logo8.png" alt="Logo">
+                </div>
+            </div>
+            <div class="separator"></div> <!-- Ligne de séparation -->
+            <div class="copyright">
+                <p>&copy; 2024 La Boutique Du Bien-Être</p>
+                <div class="info">
+                    <p>Mail : Wideshoes@contact.be</p>
+                    <p>Téléphone : 0032 510 08 01</p>
+                    <p>Adresse : 292B Rue de Stalle, 1180 Uccle</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="script.js" defer></script>
+</body>
+
+</html>

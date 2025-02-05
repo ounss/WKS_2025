@@ -1,0 +1,158 @@
+/* Footer */
+.footer {
+  background-color: #804112;
+  color: #000;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #fefefe;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+.footer ul {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: justify;
+}
+.footer a li {
+  text-decoration: none;
+}
+
+.footer a li:hover {
+  text-decoration: none;
+  color: #739e3c;
+}
+.first-party {
+  flex-wrap: wrap;
+  margin: 0.75rem;
+  align-items: flex-start;
+  /* margin-bottom: 1rem; */
+  display: flex;
+  justify-content: space-between;
+}
+.paiement p {
+  color: white;
+}
+.paiement ul {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    0.5fr
+  ); /* Crée une grille avec 4 colonnes de largeur égale */
+}
+.paiement ul img {
+  width: 50px;
+}
+.livraison p {
+  color: white;
+}
+.livraison ul {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    0.5fr
+  ); /* Crée une grille avec 4 colonnes de largeur égale */
+  grid-column-gap: 10px;
+}
+.livraison ul img {
+  width: 40px;
+  margin-bottom: 0.1rem;
+}
+.réseaux p {
+  margin-top: 1rem;
+  color: white;
+}
+.réseaux ul {
+  display: flex;
+  margin-top: 1rem;
+  cursor: pointer;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.réseaux ul img {
+  margin-bottom: 0.5rem;
+  width: 1.5rem;
+}
+.links {
+  font-size: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.links p {
+  font-size: 1rem;
+}
+.links li {
+  margin-bottom: 0.2rem;
+  color: #fefefe;
+}
+.img-footer img {
+  margin-right: 1rem;
+  height: 10rem;
+}
+.separator {
+  border-radius: 10%;
+  justify-self: center;
+  width: 70%;
+  height: 1px; /* Épaisseur de la ligne horizontale */
+  background-color: #ffffff; /* Couleur de la ligne horizontale*/
+  margin: 10px auto;
+}
+
+/* Styles pour le texte du copyright */
+.copyright p {
+  color: #ffffff;
+  font-size: 14px; /* Taille de la police */
+  margin: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .first-party {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .paiement ul,
+  .livraison ul {
+    justify-items: center;
+  }
+
+  .réseaux ul {
+    grid-template-columns: 1fr; /* Passer à une seule colonne */
+  }
+
+  .img-footer img {
+    height: 8rem; /* Réduire la taille de l'image */
+    margin-bottom: 1rem;
+  }
+
+  .separator {
+    width: 90%; /* Élargir la ligne séparatrice */
+  }
+}
+@media (max-width: 390px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

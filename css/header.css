@@ -1,0 +1,191 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  margin: 1rem;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+p,
+li,
+ul,
+a {
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+body {
+  font-family: "Libre Baskerville", serif;
+  font-family: "Red Hat Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 1rem;
+  background-color: #739e3c;
+  color: #fff;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-header img {
+  fill: white; /* Couleur au survol : blanche */
+}
+.img-header img {
+  height: 5rem;
+}
+.responsive {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar ul {
+  margin-right: 2rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 5rem;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #804112;
+  text-decoration: none;
+}
+
+.icon img {
+  margin-left: 1rem;
+  height: 2rem;
+  fill: white;
+  width: 2rem;
+}
+.navbar button {
+  font-family: "Red Hat Display", serif;
+  border-radius: 0.5rem;
+  background-color: #537429;
+  color: #fefefe;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* Styles pour le menu hamburger */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger-menu .bar {
+  border-radius: 5rem;
+  width: 25px;
+  height: 2.5px;
+  background-color: rgb(255, 255, 255);
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+@media (max-width: 390px) {
+  .navbar {
+    width: 390px;
+  }
+  .burger-menu {
+    margin-left: 15rem;
+    display: flex;
+  }
+
+  .responsive {
+    color: #804112;
+    display: none;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 10px;
+  }
+  .responsive ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    color: #739e3c;
+    align-items: flex-start;
+  }
+
+  .responsive li {
+    margin: 10px 0;
+  }
+
+  .responsive li a {
+    color: #804112;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .responsive.active {
+    display: flex;
+    background-color: #739e3c;
+    align-items: flex-start;
+  }
+  .responsive.active:hover {
+    display: flex;
+    color: #000000;
+  }
+
+  .navbar ul li a {
+    color: #fefefe;
+    text-decoration: none;
+  }
+  .navbar:hover ul li a {
+    margin-left: 1rem;
+    color: #804112;
+    text-decoration: none;
+  }
+}
