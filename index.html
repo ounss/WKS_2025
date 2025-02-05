@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="asset/logo5.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="asset/logos/favicon.jpg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Librfe+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
@@ -49,45 +51,57 @@
                 </div>
             </div>
         </nav>
-        <div class="first-element">
-            <div class="text-slider">
-                <p class="slider-top-text">Lorem ipsum lorem ipsum</p>
-                <p class="slider-top-text">Lorem ipsum lorem ipsum</p><br>
-                <p class="slider-text">Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-            <div class="cta">
-                <button class="slider-btn">RENDEZ-VOUS</button>
-                <button class="slider-btn-2">BOUTIQUE</button>
-            </div>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <!--  <span class="text"> LOREM IPSUM</span>-->
+            <div class="slide"><img src="asset/hero/Fond hero 1.jpg"></div>
+            <div class="slide"><img src="asset/hero/Fond hero 2.jpg"></div>
+            <div class="slide"><img src="asset/hero/Fond hero 3.jpg"></div>
         </div>
-        <div class="carousel-container">
-            <div class="carousel">
-                <!--  <span class="text"> LOREM IPSUM</span>-->
-                <div class="slide"><img src="asset/hero/lake-mountains.jpg" alt="Nature"></div>
-                <div class="slide"><img src="asset/hero/morskie-oko-tatry.jpg" alt="City"></div>
-                <div class="slide"><img src="asset/hero/couple-propagating-their-houseplants-as-hobby-together.jpg"
-                        alt="Ocean"></div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="indicators">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <!-- Practiciens -->
+    <div style="margin-bottom: 100px;" class="max-w-5xl mx-auto text-center">
+        <h2 style="margin-top: 80px;" class="text-3xl font-semibold mb-8">NOS PRACTICIENS</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                <img src="asset/practiciens/Agnes Angheben.jpeg" alt="Praticien"
+                    class="w-full h-40 object-cover rounded-t-lg">
+                <h3 class="text-lg font-semibold mt-4">Agnès Angheben</h3>
+                <p class="text-gray-500 text-sm">Thérapeute</p>
+                <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="asset/practiciens/Axel Trinh Cong.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                <img src="asset/practiciens/Axel Trinh Cong.jpg" alt="Praticien"
+                    class="w-full h-40 object-cover rounded-t-lg">
                 <h3 class="text-lg font-semibold mt-4">Axel Trinh Cong</h3>
                 <p class="text-gray-500 text-sm">Thérapeute Energétique</p>
                 <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="asset/practiciens/Charlier Brigitte.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                <img src="asset/practiciens/Charlier Brigitte.jpg" alt="Praticien"
+                    class="w-full h-40 object-cover rounded-t-lg">
                 <h3 class="text-lg font-semibold mt-4">Charlier Brigitte</h3>
                 <p class="text-gray-500 text-sm">Psychologue</p>
                 <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="asset/practiciens/Florani Brigitte.webp" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                <img src="asset/practiciens/Florani Brigitte.webp" alt="Praticien"
+                    class="w-full h-40 object-cover rounded-t-lg">
                 <h3 class="text-lg font-semibold mt-4">Florani Brigitte</h3>
                 <p class="text-gray-500 text-sm">Diététicienne</p>
                 <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
             </div>
             <div class="bg-white shadow-md rounded-lg p-4 text-center">
-                <img src="asset/practiciens/Mehauden Claudine.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                <img src="asset/practiciens/Mehauden Claudine.jpg" alt="Praticien"
+                    class="w-full h-40 object-cover rounded-t-lg">
                 <h3 class="text-lg font-semibold mt-4">Mehauden Claudine</h3>
                 <p class="text-gray-500 text-sm">Masseuse</p>
                 <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
@@ -97,112 +111,69 @@
     <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-8">BOUTIQUE</h2>
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Produit 1 -->
+            <!-- Product 1 -->
             <div>
+                <!-- Frame with shadow only for the image -->
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/aspirule odorante.jpg" alt="Aspirule Odorante" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
+                    <img src="https://via.placeholder.com/200" alt="Produit 1"
+                        class="w-full h-40 object-cover rounded-lg">
+                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                        <i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
+                <!-- Text outside the frame -->
                 <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Aspirule Odorante</h3>
+                    <h3 class="text-lg font-semibold">Produit 1</h3>
+                    <p class="text-gray-500 text-sm">Description courte du produit 1</p>
                 </div>
             </div>
-    
-            <!-- Produit 2 -->
+
+            <!-- Product 2 -->
             <div>
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/baume consoude douce.jpg" alt="Baume Consoude Douce" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
+                    <img src="https://via.placeholder.com/200" alt="Produit 2"
+                        class="w-full h-40 object-cover rounded-lg">
+                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                        <i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
                 <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Baume Consoude Douce</h3>
+                    <h3 class="text-lg font-semibold">Produit 2</h3>
+                    <p class="text-gray-500 text-sm">Description courte du produit 2</p>
                 </div>
             </div>
-    
-            <!-- Produit 3 -->
+
+            <!-- Product 3 -->
             <div>
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/bruyère.jpg" alt="Bruyère" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
+                    <img src="https://via.placeholder.com/200" alt="Produit 3"
+                        class="w-full h-40 object-cover rounded-lg">
+                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                        <i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
                 <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Bruyère</h3>
+                    <h3 class="text-lg font-semibold">Produit 3</h3>
+                    <p class="text-gray-500 text-sm">Description courte du produit 3</p>
                 </div>
             </div>
-    
-            <!-- Produit 4 -->
+
+            <!-- Product 4 -->
             <div>
                 <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/cannelle ceylan.jpg" alt="Cannelle Ceylan" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
+                    <img src="https://via.placeholder.com/200" alt="Produit 4"
+                        class="w-full h-40 object-cover rounded-lg">
+                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                        <i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
                 <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Cannelle Ceylan</h3>
-                </div>
-            </div>
-    
-            <!-- Produit 5 -->
-            <div>
-                <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/citron zeste.jpg" alt="Citron Zeste" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
-                    </button>
-                </div>
-                <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Citron Zeste</h3>
-                </div>
-            </div>
-    
-            <!-- Produit 6 -->
-            <div>
-                <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/frêne bouteille.jpg" alt="Frêne Bouteille" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
-                    </button>
-                </div>
-                <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Frêne Bouteille</h3>
-                </div>
-            </div>
-    
-            <!-- Produit 7 -->
-            <div>
-                <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/propolis compositum.jpg" alt="Propolis Compositum" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
-                    </button>
-                </div>
-                <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Propolis Compositum</h3>
-                </div>
-            </div>
-    
-            <!-- Produit 8 -->
-            <div>
-                <div class="bg-white shadow-md rounded-lg p-4 relative">
-                    <img src="asset/produits/sirop respiration.jpg" alt="Sirop Respiration" class="w-full h-40 object-cover rounded-lg">
-                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                        <i class="fas fa-shopping-cart text-base"></i>
-                    </button>
-                </div>
-                <div class="mt-3 text-center">
-                    <h3 class="text-lg font-semibold">Sirop Respiration</h3>
+                    <h3 class="text-lg font-semibold">Produit 4</h3>
+                    <p class="text-gray-500 text-sm">Description courte du produit 4</p>
                 </div>
             </div>
         </div>
     </div>
-    
     <br><br><br>
     <!-- Footer -->
     <footer class="footer">
