@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="asset/logo5.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
     </style>
@@ -16,43 +17,43 @@
 
 <body>
     <header>
-        <nav class="navbar">
-
-            <div class="container">
-
-                <div class="img-header">
-
-                    <a href="index.html"> <img style="width: 50%;" src="log"< alt="Logo"> </a>
+        <nav class="w-full fixed top-0 bg-[#739e3c] text-white z-50 py-2 shadow-md">
+            <div class="container mx-auto flex justify-between items-center px-6 h-20">
+                <div class="img-header flex items-center">
+                    <a href="index.html">
+                        <img class="h-12" src="asset/logos/Transparent (blanc).png" alt="Logo">
+                    </a>
                 </div>
-                <div class="burger-menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white"></div>
                 </div>
-                <div class="responsive">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="propos.html"> À propos</a></li>
-                        <li><a href="items.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><button><a href="rdv.html">RENDEZ-VOUS</a>
-                            </button></li>
+                <div class="hidden md:flex items-center space-x-8">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="index.html" class="hover:text-orange-700">Home</a></li>
+                        <li><a href="propos.html" class="hover:text-orange-700">À propos</a></li>
+                        <li><a href="items.html" class="hover:text-orange-700">Boutique</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-700">Contact</a></li>
                     </ul>
-                    <div class="icon">
-                        <a href="shop.html"><img src="asset/cart-shopping.svg" alt="Panier"></a>
-                        <a href="connexion.html"><img src="asset/user.svg" style="
-    width: 1.8rem" alt="Connexion"></a>
+                    <div class="flex items-center space-x-4">
+                        <a href="shop.html">
+                            <img src="asset/cart-shopping.svg" alt="Panier" class="h-8 w-8">
+                        </a>
+                        <a href="connexion.html">
+                            <img src="asset/user.svg" alt="Connexion" class="h-8 w-8">
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
+        
         <div class="carousel-container">
             <div class="carousel">
                 <!--  <span class="text"> LOREM IPSUM</span>-->
-                <div class="slide"><img src="asset/hero/lake-mountains.jpg" alt="Nature"></div>
-                <div class="slide"><img src="asset/hero/morskie-oko-tatry.jpg" alt="City"></div>
-                <div class="slide"><img src="asset/hero/couple-propagating-their-houseplants-as-hobby-together.jpg"
-                        alt="Ocean"></div>
+                <div class="slide"><img src="asset/hero/Fond hero 1.jpg"></div>
+                <div class="slide"><img src="asset/hero/Fond hero 2.jpg"></div>
+                <div class="slide"><img src="asset/hero/Fond hero 3.jpg"></div>
             </div>
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
@@ -62,7 +63,41 @@
                 <span class="dot"></span>
             </div>
         </div>
-        <h1>NOS PRACTICIENS</h1>
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 style="margin-top: 80px;" class="text-3xl font-semibold mb-8">NOS PRACTICIENS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                    <img src="asset/practiciens/Agnes Angheben.jpeg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-lg font-semibold mt-4">Agnès Angheben</h3>
+                    <p class="text-gray-500 text-sm">Thérapeute</p>
+                    <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                    <img src="asset/practiciens/Axel Trinh Cong.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-lg font-semibold mt-4">Axel Trinh Cong</h3>
+                    <p class="text-gray-500 text-sm">Thérapeute Energétique</p>
+                    <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                    <img src="asset/practiciens/Charlier Brigitte.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-lg font-semibold mt-4">Charlier Brigitte</h3>
+                    <p class="text-gray-500 text-sm">Psychologue</p>
+                    <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                    <img src="asset/practiciens/Florani Brigitte.webp" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-lg font-semibold mt-4">Florani Brigitte</h3>
+                    <p class="text-gray-500 text-sm">Diététicienne</p>
+                    <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                    <img src="asset/practiciens/Mehauden Claudine.jpg" alt="Praticien" class="w-full h-40 object-cover rounded-t-lg">
+                    <h3 class="text-lg font-semibold mt-4">Mehauden Claudine</h3>
+                    <p class="text-gray-500 text-sm">Masseuse</p>
+                    <button class="mt-4 bg-[#739e3c] text-white px-4 py-2 rounded-lg">Prendre RDV</button>
+                </div>
+            </div>
+        </div>
         <div class="practicien">
             <div class="card">
                 <img src="asset/hero/lake-mountains.jpg">
