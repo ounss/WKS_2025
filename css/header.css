@@ -33,7 +33,7 @@ body {
   width: 100%;
   top: 0;
   position: fixed;
-  padding: 1rem;
+  padding: 5px;
   background-color: #739e3c;
   color: #fff;
   z-index: 1000;
