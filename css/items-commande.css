@@ -1,0 +1,158 @@
+.items-command {
+  padding: 2rem;
+  border-radius: 8px;
+  width: 50rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 8rem auto;
+}
+.ordered-items {
+  margin-bottom: 20px;
+}
+.category {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+.line {
+  border-left: 1px solid rgb(255, 255, 255);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.pictures p {
+  font-size: small;
+}
+
+.ordered-items h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.item {
+  margin-bottom: 2rem;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-around;
+  align-items: center;
+}
+.item img {
+  width: 5rem;
+}
+.item p {
+  font-size: 1em;
+  color: #333;
+}
+.taille p {
+  margin-right: 1.5rem;
+}
+
+.order-summary {
+  margin-top: 20px;
+}
+
+.order-summary h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.summary-item {
+  margin-bottom: 2rem;
+  text-align: end;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-item p {
+  font-size: 1em;
+  color: #333;
+}
+
+.summary-item h3 {
+  font-size: 1.2em;
+  color: rgb(187, 3, 3);
+}
+.summary-item-adress {
+  margin-bottom: 2rem;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.summary-item-adress img {
+  width: 1.2rem;
+  margin-left: 0.5rem;
+}
+.summary-item-adress h3 {
+  margin-right: 1rem;
+}
+.order-summary a {
+  margin-left: 15rem;
+  text-decoration: none;
+  font-family: "montserrat", sans-serif;
+  align-self: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(187, 3, 3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.order-summary a:hover {
+  margin-left: 15rem;
+  text-decoration: none;
+  font-family: "montserrat", sans-serif;
+  align-self: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(187, 3, 3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+}
+@media (max-width: 768px) {
+  .items-command {
+    margin: 10rem 0rem 1rem 4rem;
+    width: 40rem;
+  }
+  .order-summary a {
+    margin-left: 11rem;
+  }
+}
+@media (max-width: 390px) {
+  .items-command {
+    max-width: 390px;
+    margin: 9rem auto;
+    padding: 1rem;
+  }
+  .category h3 {
+    font-size: 0.7rem;
+  }
+  .item {
+    padding: 1rem;
+    font-size: x-small;
+  }
+  .item img {
+    width: 3rem;
+  }
+  .summary-item-adress {
+    font-size: 0.88rem;
+  }
+  .order-summary a {
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,140 @@
+/* Styles globaux */
+h2 {
+  color: #739e3c;
+}
+
+/* Section de recherche */
+.search-section-voiture {
+  margin-top: 8rem;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: solid 1px #ddd;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Boutons et sélection */
+select {
+  font-size: small;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  max-width: 15rem;
+  border: transparent;
+  font-family: "montserrat", sans-serif;
+}
+
+.search-section-voiture button,
+.item button {
+  padding: 0.5rem;
+  background-color: #739e3c;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+/* Images */
+.item-details img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Grille d'items */
+.item {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item-details a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive pour les tablettes et les petits écrans */
+@media screen and (max-width: 768px) {
+  /* Section de recherche en colonne */
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .search-section-voiture {
+    align-items: flex-start;
+  }
+
+  .search-section-voiture select {
+    width: 100%;
+    margin-bottom: 1rem;
+    max-width: none;
+  }
+
+  .search-section-voiture button,
+  .item button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Grille d'items plus petite */
+  .item {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Responsive pour les très petits écrans (ex: mobiles) */
+@media screen and (max-width: 390px) {
+  /* Section de recherche en colonne */
+  .search-section-voiture {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h2 {
+    color: #739e3c;
+    margin-bottom: 1rem;
+  }
+
+  .search-section-voiture select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* Grille d'items encore plus compacte */
+  .item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-details img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
