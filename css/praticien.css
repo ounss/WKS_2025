@@ -1,7 +1,9 @@
 .espace {
   margin-top: 10rem;
 }
-
+#h1title {
+  font-size: 2rem;
+}
 h2 {
   padding: 0;
   font-size: 1.5rem;
@@ -35,14 +37,11 @@ h2 {
   cursor: pointer;
 }
 
-.titlte {
+.title {
   margin-right: 35rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-.title p {
-  color: #d9d9d9;
 }
 
 .info-prsn {
@@ -106,8 +105,4 @@ button:hover {
 
 .toggle-arrow {
   transform: rotate(-90deg);
-}
-
-#h1title {
-  font-size: 2rem;
 }
