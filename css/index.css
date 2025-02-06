@@ -115,19 +115,25 @@
 
 /* Bouton principal centré */
 .slider-btn {
+  display: inline-block;
+  text-align: center;
   color: #fefefe;
   background-color: #739e3c;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
+  width: 10rem;
 }
 
 .slider-btn-2 {
+  display: inline-block;
+  text-align: center;
   color: #739e3c;
   background-color: #fefefe;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
+  width: 10rem;
 } 
 .cta{
   position: absolute;
@@ -136,9 +142,7 @@
   transform: translate(-50%,-50%);
   z-index: 2;
 }
-.cta button{
-  width:10rem;
-}
+
 .slider-btn-2:hover {
   background-color: #9BCD5B;
   cursor: pointer;
