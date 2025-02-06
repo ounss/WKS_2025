@@ -2,6 +2,9 @@ h1 {
   font-size: 2rem;
   margin-top: 10rem; /* Réduit pour les petits écrans */
 }
+#h1title {
+  font-size: 2rem;
+}
 h2 {
   padding: 0;
   font-size: 1.5rem;
@@ -35,14 +38,11 @@ h2 {
   cursor: pointer;
 }
 
-.titlte {
+.title {
   margin-right: 35rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-.title p {
-  color: #d9d9d9;
 }
 
 .info-prsn {
