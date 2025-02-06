@@ -1,9 +1,14 @@
 // FONCTION POUR LE BURGER
 function toggleMenu() {
-  const responsive = document.querySelector(".responsive");
-  const burgerMenu = document.querySelector(".md:hidden");
-  burgerMenu.classList.toggle("active");
-  responsive.classList.toggle("active");
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("hidden");
+
+  // Fade in/out effect
+  if (menu.classList.contains("hidden")) {
+      menu.style.opacity = 0;
+  } else {
+      menu.style.opacity = 1;
+  }
 }
 
 
