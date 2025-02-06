@@ -176,7 +176,7 @@
   /* Positionnement du texte du slider */
   .text-slider {
     top: 20%;
-    left: 52%;
+    left: 51%;
     transform: translate(-50%, 0);
     text-align: center;
   }
@@ -184,7 +184,7 @@
   /* Positionnement de la zone CTA */
   .cta {
     top: 70%;
-    left: 52%;
+    left: 51%;
     transform: translate(-50%, -50%);
   }
 }
