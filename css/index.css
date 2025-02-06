@@ -1,5 +1,5 @@
 /*CODE POUR LA HERO SECTION*/
-.first-element{
+.first-element {
   background-color: rgba(0, 0, 0, 0.081);
 }
 .carousel-container {
@@ -134,25 +134,27 @@
   border-radius: 4px;
   padding: 10px 20px;
   width: 10rem;
-} 
-.cta{
+}
+.cta {
   position: absolute;
+  display: flex;
   top: 60%;
   left: 50.5%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
+  gap: 0.5rem;
 }
 
 .slider-btn-2:hover {
-  background-color: #9BCD5B;
+  background-color: #9bcd5b;
   cursor: pointer;
   color: #fefefe;
 }
 
 .slider-btn:hover {
   color: #fefefe;
-  background-color: #9BCD5B;
-  cursor: pointer;  
+  background-color: #9bcd5b;
+  cursor: pointer;
 }
 
 .text-slider {
@@ -166,5 +168,40 @@
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  text-align: center; 
+  text-align: center;
+}
+
+/* Media queries mobile */
+@media only screen and (max-width: 767px) {
+  /* Positionnement du texte du slider */
+  .text-slider {
+    top: 20%;
+    left: 52%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+
+  /* Positionnement de la zone CTA */
+  .cta {
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+}
+/* Media Queries Tablette */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Positionnement du texte du slider */
+  .text-slider {
+    top: 25%; /* Légèrement plus bas qu’en desktop */
+    left: 51%;
+    transform: translate(-50%, -25%);
+  }
+
+  /* Positionnement de la zone CTA */
+  .cta {
+    top: 65%; /* Positionnement ajusté pour tablette */
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
 }
