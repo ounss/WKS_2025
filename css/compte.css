@@ -1,0 +1,121 @@
+.compte {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profil {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0 5.3rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.options {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.option {
+  display: flex;
+  flex: 1;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.expand-button {
+  margin-bottom: 0.5rem;
+  font-family: "red hat display", sans-serif;
+  align-self: center;
+  align-items: center;
+  height: 3rem;
+  width: 15rem;
+  background-color: #739e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.expand-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+  background-color: #739e3c;
+  color: rgb(255, 255, 255);
+}
+
+.details {
+  width: 20rem;
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.details h3 {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.details.active {
+  display: block;
+}
+.details-change {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: #cccccc80;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.details-change img {
+  width: 1.2rem;
+  cursor: pointer;
+}
+.commande {
+  padding: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.commande img {
+  width: 5rem;
+}
+h4 {
+  margin-bottom: 0.1rem;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+.statut {
+  background-color: #cccccc80;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.statut p {
+  color: black;
+  margin-bottom: 0;
+}
+.statut img {
+  width: 2rem;
+}

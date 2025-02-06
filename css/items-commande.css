@@ -81,7 +81,7 @@
 
 .summary-item h3 {
   font-size: 1.2em;
-  color: rgb(187, 3, 3);
+  color: #739e3c;
 }
 .summary-item-adress {
   margin-bottom: 2rem;
@@ -100,11 +100,11 @@
 .order-summary a {
   margin-left: 15rem;
   text-decoration: none;
-  font-family: "montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   align-self: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   color: white;
   border: none;
   border-radius: 5px;
@@ -113,11 +113,11 @@
 .order-summary a:hover {
   margin-left: 15rem;
   text-decoration: none;
-  font-family: "montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   align-self: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   color: white;
   border: none;
   border-radius: 5px;

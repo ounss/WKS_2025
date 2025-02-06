@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Boutique Du Bien-Être</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="asset/logo5.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="asset/logos/favicon.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Librfe+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="w-full fixed top-0 bg-[#739e3c] text-white z-50 py-2 shadow-md">
+            <div class="container mx-auto flex justify-between items-center px-6 h-20">
+                <div class="img-header flex items-center">
+                    <a href="index.html">
+                        <img class="h-12" src="asset/logos/Transparent (blanc).png" alt="Logo">
+                    </a>
+                </div>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white"></div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="index.html" class="hover:text-orange-700">Accueil</a></li>
+                        <li><a href="praticien.html" class="hover:text-orange-700">Nos praticiens</a></li>
+                        <li><a href="items.html" class="hover:text-orange-700">Boutique</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-700">Contact</a></li>
+                    </ul>
+                    <div class="flex items-center space-x-4">
+                        <a href="shop.html">
+                            <img src="asset/cart-shopping.svg" alt="Panier" class="h-8 w-8">
+                        </a>
+                        <a href="connexion.html">
+                            <img src="asset/user.svg" alt="Connexion" class="h-8 w-8">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contact">
+        <h2>Contactez-nous</h2>
+        <div class="informations">
+            <div class="infos">
+                <h3>Mail</h3>
+                <button> <a href="mailto:Wideshoes@contact.be" p>Envoyez-nous un mail</p></a> </button>
+            </div>
+            <div class="line"></div>
+            <div class="infos">
+                <h3>Téléphone</h3>
+                <button> <a href="tel:00325100801" p>Appelez-nous</p> </a></button>
+            </div>
+            <div class="line"></div>
+            <div class="infos">
+                <h3>Adresse</h3>
+                <button> <a
+                        href="https://www.google.com/maps/place/EFP/@50.7937966,4.3101584,16z/data=!4m10!1m2!2m1!1sefp!3m6!1s0x47c3c5c42c2288f1:0xf7f600728ebc2417!8m2!3d50.7937966!4d4.3189131!15sCgNlZnBaBSIDZWZwkgEPdHJhaW5pbmdfY2VudGVy4AEA!16s%2Fg%2F1tncs1n_?entry=ttu"
+                        target="_blank">Trouvez-nous</a>
+
+                </button>
+            </div>
+        </div>
+        <div class="form">
+            <h2>Écrivez-nous</h2>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+    <script src="script.js" defer></script>

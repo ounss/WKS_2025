@@ -5,7 +5,7 @@ h2 {
 
 /* Section de recherche */
 .search-section-voiture {
-  margin-top: 8rem;
+  margin-top: 6rem;
   background-color: rgb(224, 224, 224);
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ select {
   border-radius: 1rem;
   max-width: 15rem;
   border: transparent;
-  font-family: "montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
 }
 
 .search-section-voiture button,
@@ -34,7 +34,7 @@ select {
   border: none;
   border-radius: 0.5rem;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   cursor: pointer;
 }
 

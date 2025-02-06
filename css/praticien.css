@@ -1,0 +1,113 @@
+.espace {
+  margin-top: 10rem;
+}
+
+h2 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+.faq-section {
+  width: 90%; /* Utilisation de pourcentage pour plus de flexibilité */
+  max-width: 70rem; /* Limite la largeur sur les grands écrans */
+  margin: 0 auto;
+  padding: 1rem; /* Utilisation de rem pour un padding adaptable */
+}
+
+.faq-section img {
+  border-radius: 50%;
+  width: 5rem; /* Utilisation de rem au lieu de px */
+  height: 5rem; /* Pour garder l'aspect circulaire */
+}
+
+.faq-item {
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.faq-question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titlte {
+  margin-right: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title p {
+  color: #d9d9d9;
+}
+
+.info-prsn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#button-praticien {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 1rem;
+}
+
+button {
+  margin: 0.2rem;
+  cursor: pointer;
+  font-family: "red hat display", sans-serif;
+  background-color: #739e3c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button.product {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+button:hover {
+  background-color: #415820;
+}
+
+.toggle-arrow {
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-answer p {
+  margin-bottom: 1rem;
+}
+
+.faq-answer ul {
+  margin: 1rem;
+}
+
+.faq-answer li {
+  list-style-type: circle;
+}
+
+.toggle-arrow {
+  transform: rotate(-90deg);
+}
+
+#h1title {
+  font-size: 2rem;
+}

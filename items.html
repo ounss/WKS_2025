@@ -9,116 +9,143 @@
     <link rel="stylesheet" href="css/item.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="asset/logo5.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="asset/logos/favicon.jpg">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Librfe+Baskerville:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-
-            <div class="container">
-
-                <div class="img-header">
-
-                    <a href="index.html"> <img style="width: 50%;" src="log" alt="Logo"> </a>
+        <nav class="w-full fixed top-0 bg-[#739e3c] text-white z-50 py-2 shadow-md">
+            <div class="container mx-auto flex justify-between items-center px-6 h-20">
+                <div class="img-header flex items-center">
+                    <a href="index.html">
+                        <img class="h-12" src="asset/logos/Transparent (blanc).png" alt="Logo">
+                    </a>
                 </div>
-                <div class="burger-menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+                <div class="md:hidden" onclick="toggleMenu()">
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white mb-1"></div>
+                    <div class="w-6 h-0.5 bg-white"></div>
                 </div>
-                <div class="responsive">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="propos.html"> À propos</a></li>
-                        <li><a href="item.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><button><a href="rdv.html">RENDEZ-VOUS</a>
-                            </button></li>
+                <div class="hidden md:flex items-center space-x-8">
+                    <ul class="flex space-x-8 items-center">
+                        <li><a href="index.html" class="hover:text-orange-700">Accueil</a></li>
+                        <li><a href="praticien.html" class="hover:text-orange-700">Nos praticiens</a></li>
+                        <li><a href="items.html" class="hover:text-orange-700">Boutique</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-700">Contact</a></li>
                     </ul>
-                    <div class="icon">
-                        <a href="shop.html"><img src="asset/cart-shopping.svg" alt="Panier"></a>
-                        <a href="connexion.html"><img src="asset/user.svg" style="
-    width: 1.8rem" alt="Connexion"></a>
+                    <div class="flex items-center space-x-4">
+                        <a href="shop.html">
+                            <img src="asset/cart-shopping.svg" alt="Panier" class="h-8 w-8">
+                        </a>
+                        <a href="connexion.html">
+                            <img src="asset/user.svg" alt="Connexion" class="h-8 w-8">
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="search-section-voiture">
-            <h2>Filtre</h2>
-            <select id="carMake">
-                <option value="">Type de marques</option>
-                <!-- Ajouter les marques ici -->
-                <option value="marque1">Marque 1</option>
-                <option value="marque2">Marque 2</option>
-                <!-- Etc. -->
-            </select>
-            <select id="carModel">
-                <option value="">Type de produits</option>
-                <option value="carModel">Produit 1</option>
-                <!-- Ajouter les modèles en fonction de la marque -->
-            </select>
-            <select id="carEngine">
-                <option value="">Quantité</option>
-                <!-- Ajouter les motorisations en fonction du modèle -->
-            </select>
-            <select id="carEngine">
-                <option value="">Praticien</option>
-                <!-- Ajouter les motorisations en fonction du modèle -->
-            </select>
-            <div class="filter">
-                <select name="prix" id="prix">
-                    <option value="recommande">Recommandé</option>
-                    <option value="croissant">Prix Croissant</option>
-                    <option value="decroissant">Prix Décroissant</option>
+    </header>
+    <div class="search-section-voiture">
+        <h2>Filtre</h2>
+        <select id="carMake">
+            <option value="">Type de marques</option>
+            <!-- Ajouter les marques ici -->
+            <option value="marque1">Marque 1</option>
+            <option value="marque2">Marque 2</option>
+            <!-- Etc. -->
+        </select>
+        <select id="carModel">
+            <option value="">Type de produits</option>
+            <option value="carModel">Produit 1</option>
+            <!-- Ajouter les modèles en fonction de la marque -->
+        </select>
+        <select id="carEngine">
+            <option value="">Quantité</option>
+            <!-- Ajouter les motorisations en fonction du modèle -->
+        </select>
+        <select id="carEngine">
+            <option value="">Praticien</option>
+            <!-- Ajouter les motorisations en fonction du modèle -->
+        </select>
+        <div class="filter">
+            <select name="prix" id="prix">
+                <option value="recommande">Recommandé</option>
+                <option value="croissant">Prix Croissant</option>
+                <option value="decroissant">Prix Décroissant</option>
 
-                </select>
-            </div>
-            <button onclick="searchByCar()">Rechercher</button>
+            </select>
         </div>
-        <div class="item">
-            <div class="item-details" id="details1">
-                <h3>Amortisseur</h3>
-                <a href="items-detail.html">
-                    <img src="asset/exemple.jpg" alt="Chaussure 1" class="item-img" data-details="details1"
-                        data-categorie="talons"> </a>
+        <button onclick="searchByCar()">Rechercher</button>
+    </div>
+
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">BOUTIQUE</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div><!-- Frame with shadow only for the image -->
+                <div class="bg-white shadow-md rounded-lg p-4 relative">
+                    <img src="asset/produits/aspirule odorante.jpg" alt="Produit 1"
+                        class="w-full h-40 object-cover rounded-lg">
+                    <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                <!-- Text outside the frame -->
+                <div class="mt-3 text-center">
+                    <h3 class="text-lg font-semibold">Produit 1</h3>
+                    <p class="text-gray-500 text-sm">Description courte du produit 1</p>
+                </div>
 
 
-                <!--  <p>Description du Produit.</p> -->
+                <!-- Product 2 -->
+                <div>
+                    <div class="bg-white shadow-md rounded-lg p-4 relative">
+                        <img src="asset/produits/baume consoude douce.jpg" alt="Produit 2"
+                            class="w-full h-40 object-cover rounded-lg">
+                        <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <h3 class="text-lg font-semibold">Produit 2</h3>
+                        <p class="text-gray-500 text-sm">Description courte du produit 2</p>
+                    </div>
+                </div>
 
-                <button>
-                    <a href="shop.html"> Ajouter au panier</a>
-                </button>
+                <!-- Product 3 -->
+                <div>
+                    <div class="bg-white shadow-md rounded-lg p-4 relative">
+                        <img src="asset/produits/bruyère.jpg" alt="Produit 3"
+                            class="w-full h-40 object-cover rounded-lg">
+                        <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <h3 class="text-lg font-semibold">Produit 3</h3>
+                        <p class="text-gray-500 text-sm">Description courte du produit 3</p>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div>
+                    <div class="bg-white shadow-md rounded-lg p-4 relative">
+                        <img src="asset/produits/cannelle ceylan.jpg" alt="Produit 4"
+                            class="w-full h-40 object-cover rounded-lg">
+                        <button class="absolute right-4 bottom-4 bg-[#739e3c] text-white p-3 rounded-full">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <h3 class="text-lg font-semibold">Produit 4</h3>
+                        <p class="text-gray-500 text-sm">Description courte du produit 4</p>
+                    </div>
+                </div>
             </div>
-            <div class="item-details" id="details1">
-                <h3>Amortisseur</h3>
-                <a href="items-detail.html">
-                    <img src="asset/exemple.jpg" alt="Chaussure 1" class="item-img" data-details="details1"
-                        data-categorie="talons">
-                </a>
-
-
-                <!--  <p>Description du Produit.</p> -->
-
-                <button>
-                    <a href="shop.html"> Ajouter au panier</a>
-                </button>
-            </div>
-            <div class="item-details" id="details1">
-                <h3>Amortisseur</h3>
-                <a href="items-detail.html">
-                    <img src="asset/exemple.jpg" alt="Chaussure 1" class="item-img" data-details="details1"
-                        data-categorie="talons">
-                </a>
-
-
-                <!--  <p>Description du Produit.</p> -->
-
-                <button>
-                    <a href="shop.html"> Ajouter au panier</a>
-                </button>
-            </div>
-        </div>
-        <script src="script.js" defer></script>
+            <script src="script.js" defer></script>

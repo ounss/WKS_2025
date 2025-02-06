@@ -94,3 +94,56 @@ document.addEventListener("DOMContentLoaded", function () {
   startAutoSlide();
 });
 
+// CODE POUR LA PAGE CONNEXION (le switch)
+document.addEventListener("DOMContentLoaded", () => {
+  const switchButton = document.getElementById("switch-button");
+  const switchText = document.getElementById("switch-text");
+  const switchContainer = document.querySelector(".switch");
+  const inscriptionForm = document.querySelector(".inscription-form");
+  const connexionForm = document.querySelector(".already-registered");
+
+  switchContainer.addEventListener("click", () => {
+    if (switchContainer.classList.contains("active")) {
+      // Passe à la section d'inscription
+      switchContainer.classList.remove("active");
+      switchText.textContent = "Déjà inscrit ?";
+      switchButton.textContent = "Connectez-vous !";
+      inscriptionForm.style.display = "block";
+      connexionForm.style.display = "none";
+    } else {
+      // Passe à la section de connexion
+      switchContainer.classList.add("active");
+      switchText.textContent = "Pas encore de compte ?";
+      switchButton.textContent = "Inscrivez-vous !";
+      inscriptionForm.style.display = "none";
+      connexionForm.style.display = "block";
+    }
+  });
+
+  // Initialement, montrer le formulaire d'inscription
+  inscriptionForm.style.display = "block";
+  connexionForm.style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const expandButtons = document.querySelectorAll(".expand-button");
+
+  expandButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const details = this.nextElementSibling;
+      details.classList.toggle("active");
+    });
+  });
+});
+
+//CODE POUR LA PAGE PRATICIEN
+// Montrer le détail des informations des tarifs
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    item.querySelector(".faq-question").addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+});

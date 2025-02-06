@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Boutique Du Bien-Être</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/connexion.css">
+    <link rel="stylesheet" href="css/praticien.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="asset/logo5.png">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,58 +52,35 @@
             </div>
         </nav>
     </header>
-    <div class=" connexion">
-        <div class="switch">
-            <h2 id="switch-text">Déjà inscrit ?</h2>
-            <button id="switch-button">Connectez-vous !</button>
-        </div>
-        <div class="inscription-form">
-            <h2>Inscription</h2>
-            <!--<p>Déjà inscrit ? <a href="#" id="show-login-form">Connectez-vous</a></p>-->
-            <form action="connexion.php" method="post">
-                <div class="form-group">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" placeholder="Votre email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
-                </div>
-                <div class="form-group-adress">
-                    <label for="adresse">Adresse :</label>
-                    <input type="text" id="adresse" placeholder="Votre adresse" name="adresse">
-                    <div class="cp">
-                        <input type="text" id="commune" placeholder="Commune" name="commune">
-                        <input type="number" id="cp" placeholder="Code postal" name="cp">
+    <div class="espace">
+        <h1 id="h1title">Découvrez nos praticiens et réservez la prestation qu'il vous faut</h1>
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <img src="asset/practiciens/Agnes Angheben.jpeg" alt="Agnes Angheben">
+                    <div class="titlte">
+                        <h2>Agnes Angheben</h2>
+                        <p>Thérapeute</p>
+                        <p>Cliquez pour en savoir...<span class="tvoggle-arrow">+</span></p>
+                    </div>
+
+                    <div id="button-praticien">
+                        <a href="shop.html"> <button class="product">Découvrez leurs produits</button></a>
+
+                        <a href="reservation.html"> <button>Réserver</button></a>
                     </div>
                 </div>
-                <a href="compte.html" button type="submit">S'inscrire</button> </a>
-            </form>
 
+                <div class="faq-answer">
 
-        </div>
-        <div class="already-registered">
-            <h2>Connexion</h2>
-            <form>
-                <div class="form-group">
-                    <label for="email_connexion">Email :</label>
-                    <input type="email" id="email_connexion" name="email_connexion" placeholder="Votre mail" required>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae, reprehenderit,
+                        molestias
+                        eligendi officiis eos quos debitis iusto velit unde perferendis nemo tempora fugit laudantium
+                        pariatur? Porro placeat odit doloribus?</p>
+
                 </div>
-                <div class="form-group">
-                    <label for="password_connexion">Mot de passe :</label>
-                    <input type="password" id="password_connexion" name="password_connexion"
-                        placeholder="Votre mot de passe" required>
-                </div>
-                <a href="compte.html" button type="submit">Se connecter</button></a>
-            </form>
+            </div>
         </div>
+    </div>
     </div>
     <script src="script.js" defer></script>
