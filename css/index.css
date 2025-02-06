@@ -1,174 +1,133 @@
-/*CODE POUR LA HERO SECTION*/
-.first-element {
-  background-color: rgba(0, 0, 0, 0.081);
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden; /* This will hide horizontal scroll */
 }
+
+/* Adjust carousel-container to avoid horizontal overflow */
 .carousel-container {
-  position: relative;
-  width: 100vw;
-  height: 80vh;
-  overflow: hidden;
+position: relative;
+width: 100vw; /* Ensure container width is within the viewport */
+height: 80vh;
+overflow: hidden; /* Hide overflow to prevent horizontal scroll */
 }
+
+/* Carousel setup */
 .carousel {
-  display: flex;
-  width: calc(100vw * 5); /* 5 slides (3 images + 2 clones) */
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+display: flex;
+width: 100%; /* Adjusted to fit within the container */
+height: 100%;
+transition: transform 0.5s ease-in-out;
 }
+
+/* Slide configuration */
 .slide {
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+width: 100vw; /* Each slide takes up the full viewport width */
+height: 100vh;
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
 }
+
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
+
+/* Carousel navigation buttons */
 .carousel-container button {
-  border-radius: 0.5rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 24px;
+border-radius: 0.5rem;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0);
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 24px;
 }
+
 .prev,
-.next button {
-  background-color: transparent; /* A CORRIGER !!!*/
-}
-.prev {
-  left: 10px;
-}
 .next {
-  right: 10px;
+background-color: transparent; /* Fix the transparent background issue */
 }
 
-/* Style des indicateurs */
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+
+/* Indicators for the carousel */
 .indicators {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
+position: absolute;
+bottom: 15px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 10px;
 }
+
 .dot {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
+width: 10px;
+height: 10px;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 50%;
+transition: background-color 0.3s ease-in-out;
 }
+
 .dot.active {
-  background-color: #537429;
+background-color: #537429;
 }
 
-/*CODE POUR LES CARTES PRACTICIENS*/
-.practicien {
-  margin: 3rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-}
-.card {
-  margin: 1rem;
-  width: 15rem;
-  height: 20rem;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  border: 2px solid #739e3c;
-}
-.card img {
-  width: 15rem;
-  height: 10rem;
-}
-.card button {
-  margin: 0 0 1rem 7rem;
-  font-family: "Red Hat Display", serif;
-  border-radius: 0.5rem;
-  background-color: #739e3c;
-  color: #fefefe;
-  border: none;
-  padding: 5px 10px;
-  font-size: small;
-  cursor: pointer;
-}
-.card a {
-  color: #fff;
-  text-decoration: none;
-}
-.info_praticien {
-  margin: 1rem;
+/* Other button and text styles */
+.slider-btn,
+.slider-btn-2 {
+border-radius: 4px;
+padding: 10px 20px;
 }
 
-/* Bouton principal centré */
 .slider-btn {
-  display: inline-block;
-  text-align: center;
-  color: #fefefe;
-  background-color: #739e3c;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  width: 10rem;
+color: #fefefe;
+background-color: #739e3c;
+border: none;
 }
 
 .slider-btn-2 {
-  display: inline-block;
-  text-align: center;
-  color: #739e3c;
-  background-color: #fefefe;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  width: 10rem;
-}
-.cta {
-  position: absolute;
-  display: flex;
-  top: 60%;
-  left: 50.5%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  gap: 0.5rem;
-}
-
-.slider-btn-2:hover {
-  background-color: #9bcd5b;
-  cursor: pointer;
-  color: #fefefe;
+color: #739e3c;
+background-color: #fefefe;
+border: none;
 }
 
 .slider-btn:hover {
-  color: #fefefe;
-  background-color: #9bcd5b;
-  cursor: pointer;
+color: #fefefe;
+background-color: #9BCD5B;
 }
 
+.slider-btn-2:hover {
+background-color: #9BCD5B;
+cursor: pointer;
+color: #fefefe;
+}
+
+/* Text slider */
 .text-slider {
-  position: absolute;
-  top: 30%;
-  left: 41.5%;
-  z-index: 2;
+position: absolute;
+top: 30%;
+left: 41.5%;
+z-index: 2;
 }
 
 .slider-top-text {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
+font-weight: bold;
+font-size: 18px;
+text-transform: uppercase;
+text-align: center;
 }
 
 /* Media queries mobile */

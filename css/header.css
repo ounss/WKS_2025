@@ -129,6 +129,45 @@ body {
   transform: translateY(-10px) rotate(-45deg);
 }
 
+.nav-link {
+  color: inherit;
+  font-weight: normal;
+  display: block;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  color: #415820;
+  font-weight: bold;
+}
+
+/* Fade-in effect */
+#menu {
+  transition: opacity 0.5s ease;
+}
+
+/* Adjust the position of the menu on mobile */
+@media (max-width: 768px) {
+  #menu {
+      top: 80px; /* Adjusted to move the menu lower */
+  }
+}
+
+/* Center the profile and cart icons on mobile */
+@media (max-width: 768px) {
+  .flex.flex-row.items-center {
+      justify-content: center; /* Center the icons */
+  }
+}
+
+/* Show desktop menu properly */
+@media (min-width: 768px) {
+  #menu {
+      opacity: 1; /* Ensure desktop menu is always visible */
+      position: relative; /* Fix menu positioning in desktop mode */
+  }
+}
+
 @media (max-width: 390px) {
   .navbar {
     width: 390px;
