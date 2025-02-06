@@ -18,7 +18,7 @@ h1 {
 }
 
 .guest-order-form h2 {
-  color: rgb(187, 3, 3);
+  color: #739e3c;
   margin-bottom: 20px;
   font-size: 1.5rem;
   text-align: center;
@@ -27,7 +27,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 5px;
-  color: rgb(187, 3, 3);
+  color: #739e3c;
   font-weight: bold;
 }
 select {
@@ -36,11 +36,11 @@ select {
   border-radius: 5px;
   border: 1px solid #ddd;
   margin-bottom: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
 }
 
 select:focus {
-  border-color: rgb(187, 3, 3);
+  border-color: #739e3c;
   outline: none;
 }
 
@@ -57,8 +57,8 @@ select:focus {
 }
 
 .guest-order-container button.btn-commander {
-  font-family: "montserrat", sans-serif;
-  background-color: rgb(187, 3, 3);
+  font-family: "red hat display", sans-serif;
+  background-color: #739e3c;
   color: white;
   padding: 15px;
   width: 100%;
@@ -69,7 +69,7 @@ select:focus {
   transition: background-color 0.3s ease;
 }
 .guest-order-container button.btn-commander:hover {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
 }
 
 /* Autres styles spécifiques encapsulés */

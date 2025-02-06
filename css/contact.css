@@ -10,7 +10,7 @@ body {
   display: flex;
   margin: 10rem auto;
   border-radius: 1rem;
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   max-width: 50rem;
   padding: 3rem;
   justify-content: center;
@@ -29,7 +29,7 @@ h3 {
 .informations button {
   background-color: #0a125e;
   cursor: pointer;
-  font-family: "montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   color: white;
   border-radius: 1rem;
   padding: 5px 10px;
@@ -48,7 +48,7 @@ h3 {
   align-items: center;
 }
 .infos a {
-  color:currentColor;
+  color: currentColor;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ p {
 /* Centrer le bouton "Envoyer" */
 .contact input[type="submit"] {
   margin-left: 19rem;
-  font-family: "montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   padding: 10px 20px;
   background-color: #0a125e;
   color: rgb(255, 255, 255);
@@ -104,7 +104,7 @@ label {
 input[type="email"],
 textarea {
   border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -115,7 +115,7 @@ textarea {
 
 .form input[type="message"],
 textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: "red hat display", sans-serif;
   border-color: #00000021;
   width: 100%;
   padding-bottom: 15vh;

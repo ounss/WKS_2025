@@ -45,7 +45,7 @@
 
 .connect button,
 .btn-guest {
-  font-family: "montserrat";
+  font-family: "red hat display";
   display: block;
   width: 100%;
   padding: 10px;
@@ -61,18 +61,18 @@
   text-decoration: none; /* Supprime la décoration de texte par défaut du lien */
 }
 .btn-connect {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
 }
 
 .btn-signup {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
 }
 
 .btn-guest {
   margin-top: 4rem;
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
 }
 .btn-guest a {
@@ -80,13 +80,13 @@
   text-decoration: none; /* Supprime la décoration de texte par défaut du lien */
 }
 .btn-signup:hover {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
 }
 .btn-connect:hover {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
 }
 .btn-guest:hover {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
 }
 @media (max-width: 390px) {
   .line {

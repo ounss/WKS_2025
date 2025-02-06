@@ -23,14 +23,15 @@ body {
   width: 50%;
   padding: 10rem;
   border-radius: 1rem 0 0 1rem;
-  background-color: #0a125e;
+  background-color: #415820;
   color: white;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .switch.active {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
+  color: white;
 }
 
 .switch h2 {
@@ -41,10 +42,10 @@ body {
 #switch-button {
   font-family: "Red Hat Display", serif;
   cursor: pointer;
-  border-radius: 5px; 
+  border-radius: 5px;
   border: none;
   padding: 10px 20px;
-  color: rgb(187, 3, 3);
+  color: #739e3c;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
 }
@@ -56,13 +57,13 @@ body {
   max-width: 600px;
   padding: 20px;
   border-radius: 0 1rem 1rem 0;
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   color: white;
   transition: all 0.5s ease;
 }
 
 .already-registered {
-  background-color: #0a125e;
+  background-color: #415820;
 }
 
 h2 {
@@ -80,7 +81,7 @@ h2 {
 }
 
 .form-group input {
- font-family: "Red Hat Display", serif;
+  font-family: "Red Hat Display", serif;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -105,7 +106,7 @@ h2 {
   justify-content: space-between;
 }
 .form-group-adress input {
-  font-family: "red hat display", sans-serif;
+  font-family: "Red Hat Display", serif;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -145,7 +146,7 @@ h2 {
   text-decoration: none;
   padding: 10px 20px;
   background-color: white;
-  color: rgb(187, 3, 3);
+  color: #739e3c;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -153,7 +154,7 @@ h2 {
 
 .inscription-form a:hover,
 .already-registered a:hover {
-  background-color: rgb(187, 3, 3);
+  background-color: #739e3c;
   color: white;
 }
 

@@ -35,8 +35,8 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <ul class="flex space-x-8 items-center">
-                        <li><a href="index.html" class="hover:text-orange-700">Home</a></li>
-                        <li><a href="propos.html" class="hover:text-orange-700">À propos</a></li>
+                        <li><a href="index.html" class="hover:text-orange-700">Accueil</a></li>
+                        <li><a href="praticien.html" class="hover:text-orange-700">Nos praticiens</a></li>
                         <li><a href="items.html" class="hover:text-orange-700">Boutique</a></li>
                         <li><a href="contact.html" class="hover:text-orange-700">Contact</a></li>
                     </ul>
@@ -51,58 +51,59 @@
                 </div>
             </div>
         </nav>
-    </header><div class=" connexion">
-    <div class="switch">
-        <h2 id="switch-text">Déjà inscrit ?</h2>
-        <button id="switch-button">Connectez-vous !</button>
-    </div>
-    <div class="inscription-form">
-        <h2>Inscription</h2>
-        <!--<p>Déjà inscrit ? <a href="#" id="show-login-form">Connectez-vous</a></p>-->
-        <form action="connexion.php" method="post">
-            <div class="form-group">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-            </div>
-            <div class="form-group">
-                <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="Votre email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Mot de passe :</label>
-                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
-            </div>
-            <div class="form-group-adress">
-                <label for="adresse">Adresse :</label>
-                <input type="text" id="adresse" placeholder="Votre adresse" name="adresse">
-                <div class="cp">
-                    <input type="text" id="commune" placeholder="Commune" name="commune">
-                    <input type="number" id="cp" placeholder="Code postal" name="cp">
+    </header>
+    <div class=" connexion">
+        <div class="switch">
+            <h2 id="switch-text">Déjà inscrit ?</h2>
+            <button id="switch-button">Connectez-vous !</button>
+        </div>
+        <div class="inscription-form">
+            <h2>Inscription</h2>
+            <!--<p>Déjà inscrit ? <a href="#" id="show-login-form">Connectez-vous</a></p>-->
+            <form action="connexion.php" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
                 </div>
-            </div>
-            <a href="compte.html" button type="submit">S'inscrire</button> </a>
-        </form>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+                </div>
+                <div class="form-group-adress">
+                    <label for="adresse">Adresse :</label>
+                    <input type="text" id="adresse" placeholder="Votre adresse" name="adresse">
+                    <div class="cp">
+                        <input type="text" id="commune" placeholder="Commune" name="commune">
+                        <input type="number" id="cp" placeholder="Code postal" name="cp">
+                    </div>
+                </div>
+                <a href="compte.html" button type="submit">S'inscrire</button> </a>
+            </form>
 
 
+        </div>
+        <div class="already-registered">
+            <h2>Connexion</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email_connexion">Email :</label>
+                    <input type="email" id="email_connexion" name="email_connexion" placeholder="Votre mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="password_connexion">Mot de passe :</label>
+                    <input type="password" id="password_connexion" name="password_connexion"
+                        placeholder="Votre mot de passe" required>
+                </div>
+                <a href="compte.html" button type="submit">Se connecter</button></a>
+            </form>
+        </div>
     </div>
-    <div class="already-registered">
-        <h2>Connexion</h2>
-        <form>
-            <div class="form-group">
-                <label for="email_connexion">Email :</label>
-                <input type="email" id="email_connexion" name="email_connexion" placeholder="Votre mail" required>
-            </div>
-            <div class="form-group">
-                <label for="password_connexion">Mot de passe :</label>
-                <input type="password" id="password_connexion" name="password_connexion"
-                    placeholder="Votre mot de passe" required>
-            </div>
-            <a href="compte.html" button type="submit">Se connecter</button></a>
-        </form>
-    </div>
-</div>
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>

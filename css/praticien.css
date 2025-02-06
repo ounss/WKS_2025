@@ -1,26 +1,30 @@
 h1 {
-  margin-top: 10rem;
+  font-size: 2rem;
+  margin-top: 10rem; /* Réduit pour les petits écrans */
+}
+h2 {
+  padding: 0;
+  font-size: 1.5rem;
 }
 .faq-section {
-  
-  width: 60%;
+  width: 90%; /* Utilisation de pourcentage pour plus de flexibilité */
+  max-width: 70rem; /* Limite la largeur sur les grands écrans */
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem; /* Utilisation de rem pour un padding adaptable */
 }
+
 .faq-section img {
   border-radius: 50%;
-  /* Bordure arrondie à 50% */
-  width: 90px;
-  /* Taille de l'image */
-  height: 90px;
-  /* Taille de l'image */
+  width: 5rem; /* Utilisation de rem au lieu de px */
+  height: 5rem; /* Pour garder l'aspect circulaire */
 }
 
 .faq-item {
+  box-shadow: rgba(0, 0, 0, 0.301) 0 6px 6px 0;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 10px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .faq-question {
@@ -31,25 +35,55 @@ h1 {
   cursor: pointer;
 }
 
+.titlte {
+  margin-right: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title p {
+  color: #d9d9d9;
+}
+
+.info-prsn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.button-praticien {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .faq-answer {
   display: none;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
+
 button {
+  margin: 0.2rem;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  background-color: #7d593c;
+  font-family: "red hat display", sans-serif;
+  background-color: #739e3c;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #3b2b1e;
+button.product {
+  background-color: #d9d9d9;
+  color: black;
 }
+
+button:hover {
+  background-color: #415820;
+}
+
 .toggle-arrow {
   transition: transform 0.3s;
 }
@@ -57,15 +91,19 @@ button:hover {
 .faq-item.active .faq-answer {
   display: block;
 }
+
 .faq-answer p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
+
 .faq-answer ul {
-  margin: 10px;
+  margin: 1rem;
 }
+
 .faq-answer li {
   list-style-type: circle;
 }
-.faq-item.active .toggle-arrow {
+
+.toggle-arrow {
   transform: rotate(-90deg);
 }
